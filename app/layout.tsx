@@ -1,9 +1,7 @@
 "use client"
 
-import type { Metadata } from "next";
 import { motion } from 'framer-motion'
 import { Tulpen_One } from 'next/font/google'
-import { useState } from 'react'
 import "./globals.css";
 import Link from "next/link";
 import { usePathname } from "next/navigation";

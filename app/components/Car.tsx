@@ -9,7 +9,6 @@ type Props = {
 
 export default function Car({src, name}: Props) {
 
-    const [active, setActive ] = useState('black')
     return(
         <motion.div className = 'flex flex-col items-center justify-center'>
             <motion.div

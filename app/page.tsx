@@ -1,17 +1,11 @@
 "use client"
 
 import { useState } from "react";
-import { off } from "process";
-import Image from "next/image";
-import red from '../public/assets/pngimg.com - lamborghini_PNG102911.png'
 import black from '../public/assets/pngimg.com - lamborghini_PNG102898.png'
-import TopNav from './components/TopNav';
 import Car from './components/Car';
 
 export default function Home() {
-  const [ isActive, setActive ] = useState(false)
-  const [ x, setX ] = useState(0)
-  const [car, setCar] = useState(black)
+ 
 
   const variants = {
     on: {

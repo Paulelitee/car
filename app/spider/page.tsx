@@ -1,7 +1,6 @@
 "use client"
 
 import { motion } from 'framer-motion'
-import Image from 'next/image'
 import spider from '../../public/assets/pngimg.com - lamborghini_PNG102911.png'
 import Car from '../components/Car'
 
