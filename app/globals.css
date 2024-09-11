@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --accent: rgb(0, 132, 255);
+}
+
+[data-theme = 'dark'] {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.toggle-container {
+  height: 50px;
+  width: 100px;
+  display: flex;
+  padding: 3px;
+  border-radius: 50px;
+  border: solid 1px rgb(227, 227, 227);
+  align-self: center;
+  cursor: pointer;
+}
+
+.circle  {
+background-color: rgb(197, 197, 197) ;
+width: 50%;
+height: 100%;
+border-radius: 50px;
+}
+
+button{
+  background-color: blue;
+  padding: 10px 30px;
+  margin: 10px;
+  color: white;
+  border-radius: 50px;
+}
+
+.top-nav    {
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+
+.top-nav-item, .top-nav-item-active {
+  border: solid 1px rgb(234, 234, 234);
+  padding: 10px 30px;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 400;
+  background-color: #f3f3f3;
+  transition: ease-in-out 0.5s;
+}
+
+.top-nav-item:hover, .top-nav-item-active:hover {
+  border-color: red;
+  transition: ease-in-out 0.5s;
+}
+
+.top-nav-item-active  {
+  background-color: black;
+  color: white;
+  font-weight: 900;
+}
+
+.title {
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 300px;
+  letter-spacing: -10px;
+}
