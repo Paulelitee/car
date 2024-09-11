@@ -8,7 +8,7 @@ export default function Page() {
 
     return (
         <motion.div className = 'flex justify-center'>
-            <Car src = {urus} name = 'spider'/>
+            <Car src = {urus} name = 'urus'/>
     </motion.div>
     )
 }
