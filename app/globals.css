@@ -52,6 +52,7 @@ button{
   margin: 10px;
   color: white;
   border-radius: 50px;
+  height: 100vh;
 }
 
 .top-nav    {

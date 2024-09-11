@@ -24,7 +24,7 @@ export default function Car({src, name}: Props) {
                     x: '100vh'
                 }}
             >
-                <Image src = {src} width={800} height={600} alt = 'car image'/>
+                <Image src = {src} width={600} height={500} alt = 'car image'/>
             </motion.div>
             <motion.h1 className = 'title'
                         initial = {{
