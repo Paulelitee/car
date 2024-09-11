@@ -7,7 +7,22 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 
-
+const navItems = [
+  {
+    name: 'murcielago',
+    link: '/'
+  },
+  {
+    name: 'urus',
+    link: '/urus'
+  },{
+    name: 'huracan',
+    link: '/huracan'
+  },{
+    name: 'aventador',
+    link: '/spider'
+  },
+]
 const font = Tulpen_One({ weight: ["400"], subsets: ["latin"]})
 
 export default function RootLayout({
@@ -24,8 +39,8 @@ export default function RootLayout({
         className={font.className}
       >
         <div className='top-nav'>
-           { ['/', '/huracan', '/spider'].map(
-            (car, id) => <Link key = {id} href={car}><motion.div className={car === path ? 'top-nav-item-active' : 'top-nav-item'}>{car}</motion.div></Link>)
+           { navItems.map(
+            (car, id) => <Link key = {id} href={car.link}><motion.div className={car.link === path ? 'top-nav-item-active' : 'top-nav-item'}>{car.name}</motion.div></Link>)
            }
         </div>
         {children}

@@ -58,8 +58,8 @@ button{
 .top-nav    {
   display: flex;
   justify-content: center;
-  margin-top: 4em 4em;
-  margin-bottom: 100px;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
 }
 
 .top-nav-item, .top-nav-item-active {
