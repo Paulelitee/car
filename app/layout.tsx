@@ -25,7 +25,7 @@ export default function RootLayout({
       >
         <div className='top-nav'>
            { ['/', '/huracan', '/spider'].map(
-            (car, id) => <Link href={car}><motion.div className={car === path ? 'top-nav-item-active' : 'top-nav-item'}>{car}</motion.div></Link>)
+            (car, id) => <Link key = {id} href={car}><motion.div className={car === path ? 'top-nav-item-active' : 'top-nav-item'}>{car}</motion.div></Link>)
            }
         </div>
         {children}
